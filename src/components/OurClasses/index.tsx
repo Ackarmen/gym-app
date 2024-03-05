@@ -1,9 +1,8 @@
-import ClasseCard from "@/components/OurClasses";
+import ClasseCard from "@/components/OurClasses/ClasseCard";
 import Headings from "@/components/ui/Headings";
-import { SelectedPage } from "@/lib/types";
+import { classes } from "@/lib/data";
+import { ClasseType, SelectedPage } from "@/lib/types";
 import { motion } from "framer-motion";
-
-const classes = [];
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -38,8 +37,13 @@ const OurClasses = ({ setSelectedPage }: Props) => {
         </motion.div>
         <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
           <ul className="w-[2800px] whitespace-nowrap">
-            {classes.map((item, index) => (
-              <ClasseCard key={index} />
+            {classes.map((item: ClasseType, index) => (
+              <ClasseCard
+                key={`${item.classeTitle}-${index}`}
+                classeTitle={item.classeTitle}
+                description={item.description}
+                image={item.image}
+              />
             ))}
           </ul>
         </div>
