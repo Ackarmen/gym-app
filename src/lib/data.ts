@@ -15,59 +15,59 @@ import React from "react";
 export const benefits: BenefitType[] = [
   {
     icon: React.createElement(HomeModernIcon),
-    title: "State of the Art Facillities",
+    title: "Installations de Pointe",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aliquid veniam eum rem atque voluptates a quia sed accusantium id.",
+      "Nos installations ultramodernes offrent un environnement propice à votre entraînement. Avec des équipements dernier cri et des espaces bien aménagés, vous bénéficierez d'une expérience fitness exceptionnelle.",
   },
   {
     icon: React.createElement(UserGroupIcon),
-    title: "100's od Diverse Classes",
+    title: "+100 Cours Variés",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aliquid veniam eum rem atque voluptates a quia sed accusantium id.",
+      "Découvrez une multitude de cours adaptés à tous les niveaux et tous les intérêts. Que vous préfériez le cardio, le renforcement musculaire, le yoga ou la danse, vous trouverez forcément une activité qui vous convient.",
   },
   {
     icon: React.createElement(AcademicCapIcon),
-    title: "Expert and Pro Trainers",
+    title: "Entraîneurs Experts et Professionnels",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aliquid veniam eum rem atque voluptates a quia sed accusantium id.",
+      "Notre équipe de coachs hautement qualifiés est là pour vous guider et vous motiver à atteindre vos objectifs. Avec leur expertise et leur dévouement, vous bénéficierez d'un encadrement personnalisé pour des résultats optimaux.",
   },
 ] as const;
 
 export const classes: ClasseType[] = [
   {
-    classeTitle: "Weight Training Classes",
+    classeTitle: "Cours de Renforcement Musculaire",
     description:
-      "Lorem ipsum, adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, quos.",
+      "Augmenter la force musculaire et développer la masse musculaire.",
     image: image1,
   },
   {
-    classeTitle: "Weight Training Classes",
+    classeTitle: "Yoga et Méditation",
     description:
-      "Lorem ipsum, adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, quos.",
+      "Favoriser la flexibilité, réduire le stress et améliorer la concentration.",
     image: image2,
   },
   {
-    classeTitle: "Weight Training Classes",
+    classeTitle: "Cours de Cardio Intensif",
     description:
-      "Lorem ipsum, adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, quos.",
+      "Améliorer l'endurance cardiovasculaire et brûler les graisses.",
     image: image3,
   },
   {
-    classeTitle: "Weight Training Classes",
+    classeTitle: "Cours de Pilates",
     description:
-      "Lorem ipsum, adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, quos.",
+      "Renforcer les muscles profonds, améliorer la posture et favoriser la stabilité.",
     image: image4,
   },
   {
-    classeTitle: "Weight Training Classes",
+    classeTitle: "Entraînement HIIT",
     description:
-      "Lorem ipsum, adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, quos.",
+      "Améliorer la condition physique générale, brûler des calories et augmenter le métabolisme.",
     image: image5,
   },
   {
-    classeTitle: "Weight Training Classes",
+    classeTitle: "Cours de Stretching et Relaxation",
     description:
-      "Lorem ipsum, adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, quos.",
+      "Améliorer la souplesse, soulager les tensions musculaires et favoriser la détente.",
     image: image6,
   },
 ] as const;

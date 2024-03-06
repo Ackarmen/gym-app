@@ -19,9 +19,9 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="avantages" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.Avantages)}
       >
         {/* Header */}
         <motion.div
@@ -35,11 +35,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <Headings>MORE THAN JUST A GYM.</Headings>
-          <p className="my-5 text-sm">
-            We provide world class fitness equipment, trainers and classes to
-            get you to your ultimate fitness goals with ease. We provide true
-            care into each and every member.
+          <Headings>PLUS QU'UNE SALLE DE SPORT.</Headings>
+          <p className="text-md my-5">
+            Des équipements de qualité, des coachs experts et une variété de
+            cours pour atteindre vos objectifs en toute simplicité. Nous
+            accordons une attention particulière à chacun de nos membres.
           </p>
         </motion.div>
 
@@ -87,8 +87,15 @@ const Benefits = ({ setSelectedPage }: Props) => {
                   }}
                 >
                   <Headings>
-                    MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                    <span className="text-primary-500">FIT</span>
+                    DES <span className="text-primary-500">MILLIONS</span> DE
+                    MEMBRES{" "}
+                    <span className="underline decoration-primary-500 underline-offset-4">
+                      HEUREUX
+                    </span>{" "}
+                    ET{" "}
+                    <span className="underline decoration-primary-500 underline-offset-4">
+                      SATISFAITS
+                    </span>
                   </Headings>
                 </motion.div>
               </div>
@@ -107,18 +114,17 @@ const Benefits = ({ setSelectedPage }: Props) => {
             >
               <p className="my-5">
                 {" "}
-                Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
-                egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
-                fames vitae vitae quis. Quis amet vulputate tincidunt at in
-                nulla nec. Consequat sed facilisis dui sit egestas ultrices
-                tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
-                Felis orci diam odio.
+                Dans un monde où la santé et le bien-être sont essentiels,
+                EVOGYM s'engage à offrir une expérience fitness exceptionnelle.
+                Notre équipe de professionnels qualifiés est dédiée à vous
+                accompagner dans votre parcours de remise en forme, en vous
+                fournissant des conseils personnalisés et un soutien constant.
               </p>
               <p className="mb-5">
-                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-                tellus quam porttitor. Mauris velit euismod elementum arcu neque
-                facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-                enim mattis odio in risus nunc.
+                Notre salle de sport compte des millions de membres satisfaits,
+                attestant de la qualité de nos services et installations.
+                Rejoignez EVOGYM pour atteindre vos objectifs de remise en forme
+                avec succès, aux côtés de nos coachs experts.
               </p>
             </motion.div>
 
@@ -126,7 +132,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             <div className="relative mt-16">
               <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
                 <ActionButton setSelectedPage={setSelectedPage}>
-                  Join Now
+                  Nous Rejoindre
                 </ActionButton>
               </div>
             </div>

@@ -27,10 +27,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="contactus" className="mx-auto w-5/6 pb-32 pt-24">
-      <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
-      >
+    <section id="contact" className="mx-auto w-5/6 pb-32 pt-24">
+      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}>
         {/* Header */}
         <motion.div
           className="md:w-3/5"
@@ -44,12 +42,14 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <Headings>
-            <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
+            PASSEZ À L'ACTION{" "}
+            <span className="text-primary-500">MAINTENANT !</span>
           </Headings>
           <p className="my-5">
-            Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
-            sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
-            adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
+            Vous êtes sur le point de franchir une étape décisive vers une vie
+            plus énergique. Ne laissez pas cette opportunité vous échapper,
+            remplissez le formulaire ci-dessous et rejoignez-nous dès
+            aujourd'hui !
           </p>
         </motion.div>
         {/* Form and Image */}
@@ -74,7 +74,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               <input
                 className={inputStyles}
                 type="text"
-                placeholder="NAME"
+                placeholder="NOM"
                 {...register("name", { required: true, maxLength: 100 })}
               />
               {errors.name && (
@@ -122,7 +122,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 type="submit"
                 className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
               >
-                SUBMIT
+                ENVOYER
               </button>
             </form>
           </motion.div>

@@ -10,10 +10,8 @@ type Props = {
 
 const OurClasses = ({ setSelectedPage }: Props) => {
   return (
-    <section className="w-full bg-primary-100 py-40" id="ourclasses">
-      <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
-      >
+    <section className="w-full bg-primary-100 py-40" id="cours">
+      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Cours)}>
         <motion.div
           className="mx-auto w-5/6"
           initial="hidden"
@@ -26,20 +24,19 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           }}
         >
           <div className="md:w-3/5">
-            <Headings>OUR CLASSES</Headings>
+            <Headings>Les Cours</Headings>
             <p className="py-5">
-              Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-              tellus quam porttitor. Mauris velit euismod elementum arcu neque
-              facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-              enim mattis odio in risus nunc.
+              Avec nos équipements de pointe et nos programmes variés, vous
+              trouverez chez EVOGYM l'inspiration et la motivation nécessaires
+              pour atteindre vos objectifs.
             </p>
           </div>
         </motion.div>
         <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
           <ul className="w-[2800px] whitespace-nowrap">
-            {classes.map((item: ClasseType, index) => (
+            {classes.map((item: ClasseType) => (
               <ClasseCard
-                key={`${item.classeTitle}-${index}`}
+                key={item.classeTitle}
                 classeTitle={item.classeTitle}
                 description={item.description}
                 image={item.image}

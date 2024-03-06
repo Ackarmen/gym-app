@@ -33,31 +33,31 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
               <div className={`${flexBetween} w-full`}>
                 <div className={`${flexBetween} gap-8 text-sm`}>
                   <Link
-                    page="Home"
+                    page="Accueil"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Benefits"
+                    page="Avantages"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Our Classes"
+                    page="Les Cours"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Contact Us"
+                    page="Nous Contactez"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                 </div>
 
                 <div className={`${flexBetween} gap-8`}>
-                  <p>Sign In</p>
+                  <p>Se Connecter</p>
                   <ActionButton setSelectedPage={setSelectedPage}>
-                    Become a Member
+                    Devenir Membre
                   </ActionButton>
                 </div>
               </div>
