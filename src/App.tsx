@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
-    SelectedPage.Home,
+    SelectedPage.Accueil,
   );
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
@@ -17,7 +17,7 @@ function App() {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
-        setSelectedPage(SelectedPage.Home);
+        setSelectedPage(SelectedPage.Accueil);
       }
       if (window.scrollY !== 0) setIsTopOfPage(false);
     };
