@@ -17,6 +17,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
     register,
     trigger,
     formState: { errors },
+    reset,
   } = useForm();
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -24,6 +25,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
     if (!isValid) {
       event.preventDefault();
     }
+
+    reset();
   };
 
   return (
@@ -120,7 +123,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
               <button
                 type="submit"
-                className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+                className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-200 hover:text-white"
               >
                 ENVOYER
               </button>

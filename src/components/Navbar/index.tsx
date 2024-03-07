@@ -43,19 +43,21 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Les Cours"
+                    page="Cours"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Nous Contactez"
+                    page="Contact"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                 </div>
 
                 <div className={`${flexBetween} gap-8`}>
-                  <p>Se Connecter</p>
+                  <p className="cursor-pointer decoration-primary-500 underline-offset-4 hover:underline">
+                    Se Connecter
+                  </p>
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Devenir Membre
                   </ActionButton>
@@ -85,25 +87,33 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
           {/* Menu items */}
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
             <Link
-              page="Home"
+              page="Accueil"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Benefits"
+              page="Avantages"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Our Classes"
+              page="Cours"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Contact Us"
+              page="Contact"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
+          </div>
+          <div className="mt-20 flex flex-col items-center gap-8">
+            <p className="cursor-pointer decoration-primary-500 underline-offset-4 hover:underline">
+              Se Connecter
+            </p>
+            <ActionButton setSelectedPage={setSelectedPage}>
+              Devenir Membre
+            </ActionButton>
           </div>
         </div>
       )}
